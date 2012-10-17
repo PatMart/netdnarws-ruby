@@ -97,9 +97,9 @@ module NetDNARWS
         self._response_as_json 'put', uri, options, data
       end
 
-      def delete uri, options={}
+      def delete uri, data={}, options={}
         options[:body] = false
-        self._response_as_json 'delete', uri, options
+        self._response_as_json 'delete', uri, options, data
       end
   end
 end
